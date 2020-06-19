@@ -1,8 +1,6 @@
 FROM gitpod/workspace-full
 
-RUN apt-get -y update && \
-    apt-get -y upgrade && \
-    pecl install xdebug && \
+RUN pecl install xdebug && \
     docker-php-ext-enable xdebug
 
 # Install custom tools, runtimes, etc.
