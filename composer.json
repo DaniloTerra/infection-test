@@ -18,5 +18,9 @@
             "TheNamespace\\": "src/",
             "TheNamespace\\Unit\\": "tests/unit/"
         }
+    },
+    "scripts": {
+        "test": "./vendor/bin/codecept run unit --coverage --coverage-xml=clover.xml --coverage-html=html",
+        "mutation-test": "./vendor/bin/infection"
     }
 }
