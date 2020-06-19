@@ -1,7 +1,6 @@
 FROM gitpod/workspace-full
 
-RUN sudo pecl install xdebug && \
-    docker-php-ext-enable xdebug
+RUN sudo pecl install xdebug
 
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
